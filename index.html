@@ -321,53 +321,146 @@
             z-index: 1;
         }
         
-        /* Project Section */
-        .project-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
-            max-width: 800px;
-            margin: 0 auto;
+    
+    /* Project Section Styles */
+    .project-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: var(--card-shadow);
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .project-header {
+        background: var(--primary-color);
+        color: white;
+        padding: 25px;
+    }
+    
+    .project-header h3 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+    
+    .project-header .date {
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+    
+    .project-body {
+        padding: 30px;
+    }
+    
+    .project-features {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .project-features h4 {
+        color: var(--primary-color);
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+    
+    .project-features ul {
+        list-style-position: inside;
+        padding-left: 10px;
+    }
+    
+    .project-features li {
+        margin-bottom: 10px;
+        color: #555;
+    }
+    
+    /* Screenshot Gallery Styles */
+    .screenshot-gallery {
+        margin-top: 40px;
+        border-top: 1px solid var(--border-color);
+        padding-top: 30px;
+    }
+    
+    .screenshot-gallery h4 {
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .screenshot-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .screenshot-box {
+        flex: 1;
+        min-width: 200px;
+        max-width: 300px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .screenshot-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .screenshot-placeholder {
+        height: 180px;
+        background: linear-gradient(135deg, #e0e7ff 0%, #d1e0ff 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+         .screenshot-img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .screenshot-placeholder i {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    
+    .screenshot-placeholder p {
+        font-weight: 600;
+        color: var(--secondary-color);
+    }
+    
+    .screenshot-caption {
+        padding: 15px;
+        text-align: center;
+        background-color: white;
+    }
+    
+    .screenshot-caption p {
+        font-size: 0.9rem;
+        color: var(--gray-color);
+        line-height: 1.4;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .screenshot-container {
+            flex-direction: column;
+            align-items: center;
         }
         
-        .project-header {
-            background: var(--primary-color);
-            color: white;
-            padding: 25px;
+        .screenshot-box {
+            width: 100%;
+            max-width: 100%;
         }
-        
-        .project-header h3 {
-            font-size: 1.6rem;
-            margin-bottom: 5px;
-        }
-        
-        .project-header .date {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-        
-        .project-body {
-            padding: 30px;
-        }
-        
-        .project-features {
-            margin-top: 20px;
-        }
-        
-        .project-features h4 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-        
-        .project-features ul {
-            list-style-position: inside;
-        }
-        
-        .project-features li {
-            margin-bottom: 10px;
-            color: #555;
-        }
+    
         
         /* Footer */
         footer {
@@ -641,34 +734,63 @@
         </div>
     </section>
 
-    <!-- Project Section -->
-    <section id="project" class="project">
-        <div class="container">
-            <div class="section-title">
-                <h2>Project</h2>
+
+   <!-- Project Section -->
+<section id="project" class="project">
+    <div class="container">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+        
+        <div class="project-card">
+            <div class="project-header">
+                <h3>Intelligent Personal Expense Analyzer using Python</h3>
+                <span class="date">January 2026</span>
             </div>
-            
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Intelligent Personal Expense Analyzer using Python</h3>
-                    <span class="date">January 2026</span>
+            <div class="project-body">
+                <p>A Python-based application that records daily expenses, stores them persistently, analyzes spending patterns by category and time, and generates intelligent alerts and reports to help users control their spending.</p>
+                
+                <div class="project-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Record and save daily expenses</li>
+                        <li>Analyze spending by category and month</li>
+                        <li>Detect overspending with smart alerts</li>
+                        <li>Export expense reports</li>
+                    </ul>
                 </div>
-                <div class="project-body">
-                    <p>A Python-based application that records daily expenses, stores them persistently, analyzes spending patterns by category and time, and generates intelligent alerts and reports to help users control their spending.</p>
-                    
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Record and save daily expenses</li>
-                            <li>Analyze spending by category and month</li>
-                            <li>Detect overspending with smart alerts</li>
-                            <li>Export expense reports</li>
-                        </ul>
+                <!-- Screenshot Gallery -->
+                <div class="screenshot-gallery">
+                    <h4>Project Screenshots</h4>
+                    <div class="screenshot-container">
+                        <div class="screenshot-box">
+                            <img src="" alt="Expense Analyzer Code Interface" class="screenshot-img">
+                            <div class="screenshot-caption">
+                                <p>Python code interface with expense analysis features</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-box">
+                            <img src="1000180811.jpg" alt="GitHub Repository" class="screenshot-img">
+                            <div class="screenshot-caption">
+                                <p>GitHub repository with project structure</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-box">
+                            <div class="screenshot-placeholder">
+                                <i class="fas fa-chart-line"></i>
+                                <p>Analysis Charts</p>
+                            </div>
+                            <div class="screenshot-caption">
+                                <p>Spending visualization and reports</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Certificates Section -->
     <section id="certificates" class="certificates">
