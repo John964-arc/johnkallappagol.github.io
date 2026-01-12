@@ -45,15 +45,13 @@ Option 1: Direct Upload to GitHub
 1. Create a new repository named pinkallappagol.github.io
 2. Upload index.html to the repository
 3. Enable GitHub Pages in repository settings (Settings → Pages → Source: main branch)
-4. Your portfolio will be live at https://pinkallappagol.github.io
+4. Your portfolio will be live at https://johnkallappagol.github.io
 
 Option 2: Local Development
 
 1. Clone/download the repository
 2. Open index.html in any web browser
 3. That's it! No build process or dependencies required
-
-🎨 Customization Guide
 
 Change Personal Information
 
@@ -89,17 +87,6 @@ Each section is clearly marked with HTML comments. Simply copy/paste the section
 · Tablet: 768px to 992px (adjusted layout)
 · Mobile: Below 768px (mobile-optimized)
 
-🔧 Future Enhancements
-
-Potential improvements to consider:
-
-· Add a download link for the PDF resume
-· Include a contact form
-· Add project images/gallery
-· Implement dark mode toggle
-· Add blog/technical articles section
-· Integrate with GitHub API to show repositories
-
 📝 Usage Notes
 
 · All code is contained in a single HTML file for easy deployment
@@ -120,6 +107,7 @@ This is a personal portfolio project, but suggestions and improvements are welco
 · Name: John Kallappagol
 · Email: ikjohn80080@gmail.com
 · GitHub: https://github.com/John964-arc
+· LinkedIn: https://www.linkedin.com/in/john-kallappagol-b50003347/
 · Website: https://john964-arc.github.io/johnkallappagol.github.io/
 
 🙏 Acknowledgments
@@ -130,6 +118,6 @@ This is a personal portfolio project, but suggestions and improvements are welco
 
 ---
 
-Last Updated: March 2025
+Last Updated: 12 January 2026
 Version: 1.0
 Status: Ready for Deployment
